@@ -1,0 +1,51 @@
+{
+  "_doc": "Economic indicator catalog. Each indicator lists sources in priority order. 'fred' requires FRED_API_KEY (free). 'bls' uses the keyless BLS public API v1 (limited to ~25 requests/day, so results are cached for 12h). transform: level | yoy | mom_pct | diff.",
+  "us": [
+    {"id": "cpi_yoy", "name": "CPI inflation (YoY)", "category": "Inflation", "unit": "%", "transform": "yoy", "fred": "CPIAUCSL", "bls": "CUUR0000SA0", "freq": "M", "importance": 3},
+    {"id": "core_cpi_yoy", "name": "Core CPI (YoY)", "category": "Inflation", "unit": "%", "transform": "yoy", "fred": "CPILFESL", "bls": "CUUR0000SA0L1E", "freq": "M", "importance": 3},
+    {"id": "pce_yoy", "name": "PCE price index (YoY)", "category": "Inflation", "unit": "%", "transform": "yoy", "fred": "PCEPI", "freq": "M", "importance": 3},
+    {"id": "core_pce_yoy", "name": "Core PCE (YoY)", "category": "Inflation", "unit": "%", "transform": "yoy", "fred": "PCEPILFE", "freq": "M", "importance": 3},
+    {"id": "ppi_yoy", "name": "PPI final demand (YoY)", "category": "Inflation", "unit": "%", "transform": "yoy", "fred": "PPIFIS", "bls": "WPSFD4", "freq": "M", "importance": 2},
+    {"id": "unrate", "name": "Unemployment rate", "category": "Labor", "unit": "%", "transform": "level", "fred": "UNRATE", "bls": "LNS14000000", "freq": "M", "importance": 3},
+    {"id": "payrolls", "name": "Nonfarm payrolls (MoM, thousands)", "category": "Labor", "unit": "k", "transform": "diff", "fred": "PAYEMS", "bls": "CES0000000001", "freq": "M", "importance": 3},
+    {"id": "wages_yoy", "name": "Average hourly earnings (YoY)", "category": "Labor", "unit": "%", "transform": "yoy", "fred": "CES0500000003", "bls": "CES0500000003", "freq": "M", "importance": 2},
+    {"id": "jolts", "name": "JOLTS job openings", "category": "Labor", "unit": "k", "transform": "level", "fred": "JTSJOL", "bls": "JTS000000000000000JOL", "freq": "M", "importance": 2},
+    {"id": "claims", "name": "Initial jobless claims", "category": "Labor", "unit": "", "transform": "level", "fred": "ICSA", "freq": "W", "importance": 2},
+    {"id": "gdp", "name": "Real GDP growth (QoQ SAAR)", "category": "Growth", "unit": "%", "transform": "level", "fred": "A191RL1Q225SBEA", "freq": "Q", "importance": 3},
+    {"id": "retail", "name": "Retail sales (MoM)", "category": "Growth", "unit": "%", "transform": "mom_pct", "fred": "RSAFS", "freq": "M", "importance": 2},
+    {"id": "indpro_yoy", "name": "Industrial production (YoY)", "category": "Growth", "unit": "%", "transform": "yoy", "fred": "INDPRO", "freq": "M", "importance": 2},
+    {"id": "sentiment", "name": "U. Michigan consumer sentiment", "category": "Sentiment", "unit": "", "transform": "level", "fred": "UMCSENT", "freq": "M", "importance": 2},
+    {"id": "housing_starts", "name": "Housing starts (SAAR, k)", "category": "Housing", "unit": "k", "transform": "level", "fred": "HOUST", "freq": "M", "importance": 2},
+    {"id": "permits", "name": "Building permits (SAAR, k)", "category": "Housing", "unit": "k", "transform": "level", "fred": "PERMIT", "freq": "M", "importance": 2},
+    {"id": "existing_sales", "name": "Existing home sales (SAAR)", "category": "Housing", "unit": "", "transform": "level", "fred": "EXHOSLUSM495S", "freq": "M", "importance": 1},
+    {"id": "new_sales", "name": "New home sales (SAAR, k)", "category": "Housing", "unit": "k", "transform": "level", "fred": "HSN1F", "freq": "M", "importance": 1},
+    {"id": "fedfunds", "name": "Effective Fed funds rate", "category": "Rates", "unit": "%", "transform": "level", "fred": "DFF", "freq": "D", "importance": 3}
+  ],
+  "unavailable": [
+    ["ISM Manufacturing / Services PMI", "ISM PMI data is proprietary to the Institute for Supply Management and not redistributable via free public APIs."],
+    ["Conference Board Consumer Confidence", "Proprietary to The Conference Board; U. Michigan sentiment is shown instead."]
+  ],
+  "real_estate": [
+    {"id": "mortgage30", "name": "30Y fixed mortgage rate", "unit": "%", "transform": "level", "fred": "MORTGAGE30US", "freq": "W"},
+    {"id": "mortgage15", "name": "15Y fixed mortgage rate", "unit": "%", "transform": "level", "fred": "MORTGAGE15US", "freq": "W"},
+    {"id": "case_shiller", "name": "Case-Shiller US National HPI (YoY)", "unit": "%", "transform": "yoy", "fred": "CSUSHPINSA", "freq": "M"},
+    {"id": "fhfa", "name": "FHFA House Price Index (YoY)", "unit": "%", "transform": "yoy", "fred": "USSTHPI", "freq": "Q"},
+    {"id": "housing_starts", "name": "Housing starts (SAAR, k)", "unit": "k", "transform": "level", "fred": "HOUST", "freq": "M"},
+    {"id": "permits", "name": "Building permits (SAAR, k)", "unit": "k", "transform": "level", "fred": "PERMIT", "freq": "M"},
+    {"id": "months_supply", "name": "New home months' supply", "unit": "mo", "transform": "level", "fred": "MSACSR", "freq": "M"},
+    {"id": "inventory", "name": "Active listings (Realtor.com)", "unit": "", "transform": "level", "fred": "ACTLISCOUUS", "freq": "M"},
+    {"id": "rent_cpi", "name": "CPI rent of primary residence (YoY)", "unit": "%", "transform": "yoy", "fred": "CUSR0000SEHA", "bls": "CUUR0000SEHA", "freq": "M"},
+    {"id": "rental_vacancy", "name": "Rental vacancy rate", "unit": "%", "transform": "level", "fred": "RRVRUSQ156N", "freq": "Q"}
+  ],
+  "rates_extra": [
+    {"id": "ig_oas", "name": "US IG corporate OAS", "unit": "%", "transform": "level", "fred": "BAMLC0A0CM", "freq": "D"},
+    {"id": "hy_oas", "name": "US High Yield OAS", "unit": "%", "transform": "level", "fred": "BAMLH0A0HYM2", "freq": "D"},
+    {"id": "tips10", "name": "10Y TIPS real yield", "unit": "%", "transform": "level", "fred": "DFII10", "freq": "D"},
+    {"id": "breakeven10", "name": "10Y breakeven inflation", "unit": "%", "transform": "level", "fred": "T10YIE", "freq": "D"},
+    {"id": "mortgage30", "name": "30Y fixed mortgage rate", "unit": "%", "transform": "level", "fred": "MORTGAGE30US", "freq": "W"}
+  ],
+  "international": {
+    "countries": [["US", "United States"], ["CN", "China"], ["JP", "Japan"], ["DE", "Germany"], ["IN", "India"], ["GB", "United Kingdom"], ["FR", "France"], ["BR", "Brazil"], ["CA", "Canada"], ["KR", "South Korea"], ["AU", "Australia"], ["MX", "Mexico"]],
+    "indicators": [["FP.CPI.TOTL.ZG", "Inflation (CPI, annual %)"], ["NY.GDP.MKTP.KD.ZG", "Real GDP growth (annual %)"], ["SL.UEM.TOTL.ZS", "Unemployment (% of labor force)"], ["NV.IND.TOTL.KD.ZG", "Industry value added growth (annual %)"]]
+  }
+}

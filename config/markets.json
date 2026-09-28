@@ -1,0 +1,18 @@
+{
+  "_doc": "Exchange sessions for the Global Market Clock. Times are local exchange time (24h). Holidays listed only where configured; other exchanges treat weekends as closed and may be wrong on local holidays. Verify against the exchange's official calendar.",
+  "exchanges": [
+    {"id": "NYSE", "city": "New York", "tz": "America/New_York", "open": "09:30", "close": "16:00", "pre": "04:00", "post": "20:00",
+     "holidays": ["2026-01-01", "2026-01-19", "2026-02-16", "2026-04-03", "2026-05-25", "2026-06-19", "2026-07-03", "2026-09-07", "2026-11-26", "2026-12-25", "2027-01-01"],
+     "early_close": {"2026-11-27": "13:00", "2026-12-24": "13:00"}, "calendar_url": "https://www.nyse.com/markets/hours-calendars"},
+    {"id": "LSE", "city": "London", "tz": "Europe/London", "open": "08:00", "close": "16:30",
+     "holidays": ["2026-01-01", "2026-04-03", "2026-04-06", "2026-05-04", "2026-05-25", "2026-08-31", "2026-12-25", "2026-12-28"],
+     "early_close": {"2026-12-24": "12:30", "2026-12-31": "12:30"}, "calendar_url": "https://www.londonstockexchange.com/equities-trading/business-days"},
+    {"id": "XETRA", "city": "Frankfurt", "tz": "Europe/Berlin", "open": "09:00", "close": "17:30",
+     "holidays": ["2026-01-01", "2026-04-03", "2026-04-06", "2026-05-01", "2026-12-24", "2026-12-25", "2026-12-31"], "calendar_url": "https://www.xetra.com/xetra-en/newsroom/trading-calendar"},
+    {"id": "TSE", "city": "Tokyo", "tz": "Asia/Tokyo", "open": "09:00", "close": "15:30", "lunch": ["11:30", "12:30"], "holidays": [], "calendar_url": "https://www.jpx.co.jp/english/corporate/about-jpx/calendar/"},
+    {"id": "HKEX", "city": "Hong Kong", "tz": "Asia/Hong_Kong", "open": "09:30", "close": "16:00", "lunch": ["12:00", "13:00"], "holidays": [], "calendar_url": "https://www.hkex.com.hk/Services/Trading-hours-and-Severe-Weather-Arrangements/Trading-Hours/Securities-Market"},
+    {"id": "SSE", "city": "Shanghai", "tz": "Asia/Shanghai", "open": "09:30", "close": "15:00", "lunch": ["11:30", "13:00"], "holidays": ["2026-10-01", "2026-10-02", "2026-10-05", "2026-10-06", "2026-10-07"], "calendar_url": "https://english.sse.com.cn/"},
+    {"id": "NSE", "city": "Mumbai", "tz": "Asia/Kolkata", "open": "09:15", "close": "15:30", "pre": "09:00", "holidays": [], "calendar_url": "https://www.nseindia.com/resources/exchange-communication-holidays"},
+    {"id": "ASX", "city": "Sydney", "tz": "Australia/Sydney", "open": "10:00", "close": "16:00", "holidays": [], "calendar_url": "https://www.asx.com.au/markets/market-resources/asx-24-trading-calendar"}
+  ]
+}

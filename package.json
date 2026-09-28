@@ -1,0 +1,13 @@
+{
+  "name": "omnimarket-intelligence-terminal",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local financial intelligence & market research terminal (FastAPI + React)",
+  "scripts": {
+    "start": "powershell -NoProfile -ExecutionPolicy Bypass -File start.ps1",
+    "api": ".venv/Scripts/python -m uvicorn backend.main:app --host 127.0.0.1 --port 8000",
+    "ui": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "test": ".venv/Scripts/python -m pytest -q"
+  }
+}

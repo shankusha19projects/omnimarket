@@ -1,0 +1,118 @@
+/* ==========================================================================
+   Deep Signal — OmniMarket design tokens
+   Dark-first institutional palette. Light theme redefines the same tokens.
+   ========================================================================== */
+:root {
+  --font-ui: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-num: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --font-display: "Space Grotesk", "IBM Plex Sans", sans-serif;
+
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius: 8px;
+  --radius-lg: 12px;
+
+  --header-h: 54px;
+  --ticker-h: 34px;
+  --status-h: 26px;
+  --nav-w: 212px;
+  --nav-w-collapsed: 58px;
+  --rail-w: 332px;
+
+  --ease: cubic-bezier(.2, .7, .2, 1);
+  --t-fast: 120ms;
+  --t-med: 220ms;
+}
+
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg-0: #05070b;
+  --bg-1: #080b11;
+  --bg-2: #0c1118;
+  --panel: #0e131b;
+  --panel-2: #121925;
+  --panel-3: #172030;
+  --panel-hover: #151d2a;
+  --line: #1b2431;
+  --line-2: #243041;
+  --line-3: #33425a;
+
+  --text: #e7ecf3;
+  --text-2: #a3afc0;
+  --text-3: #6b778a;
+  --text-4: #465164;
+
+  --accent: #37c8f5;
+  --accent-2: #1f8fd6;
+  --accent-soft: rgba(55, 200, 245, 0.12);
+  --accent-glow: rgba(55, 200, 245, 0.35);
+  --amber: #f5b544;
+  --amber-soft: rgba(245, 181, 68, 0.13);
+  --violet: #8d8cff;
+
+  --up: #22d38b;
+  --up-2: #16a86c;
+  --up-soft: rgba(34, 211, 139, 0.12);
+  --down: #ff5470;
+  --down-2: #d33b57;
+  --down-soft: rgba(255, 84, 112, 0.12);
+  --flat: #8b95a5;
+
+  --warn: #f5b544;
+  --danger: #ff5470;
+  --ok: #22d38b;
+
+  --shadow-1: 0 1px 0 rgba(255, 255, 255, 0.025) inset, 0 8px 24px -12px rgba(0, 0, 0, 0.6);
+  --shadow-pop: 0 24px 64px -16px rgba(0, 0, 0, 0.75), 0 0 0 1px var(--line-2);
+  --panel-grad: linear-gradient(180deg, rgba(255, 255, 255, 0.018), rgba(255, 255, 255, 0) 38%);
+  --skeleton-a: #121925;
+  --skeleton-b: #1a2433;
+  --grid-line: rgba(120, 140, 170, 0.07);
+  --chart-grid: #182131;
+  --chart-text: #7b879a;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg-0: #eef1f5;
+  --bg-1: #f3f5f8;
+  --bg-2: #eceff4;
+  --panel: #ffffff;
+  --panel-2: #f7f9fb;
+  --panel-3: #eef2f7;
+  --panel-hover: #f3f6fa;
+  --line: #e1e6ed;
+  --line-2: #d3dae4;
+  --line-3: #b9c3d1;
+
+  --text: #0d1522;
+  --text-2: #435064;
+  --text-3: #6a7789;
+  --text-4: #97a2b2;
+
+  --accent: #0a86c9;
+  --accent-2: #0668a3;
+  --accent-soft: rgba(10, 134, 201, 0.1);
+  --accent-glow: rgba(10, 134, 201, 0.25);
+  --amber: #c07a07;
+  --amber-soft: rgba(192, 122, 7, 0.1);
+  --violet: #5b5bd6;
+
+  --up: #0b9a5f;
+  --up-2: #087a4b;
+  --up-soft: rgba(11, 154, 95, 0.1);
+  --down: #d62845;
+  --down-2: #b41e38;
+  --down-soft: rgba(214, 40, 69, 0.09);
+  --flat: #6a7789;
+
+  --shadow-1: 0 1px 2px rgba(16, 24, 40, 0.04), 0 6px 18px -10px rgba(16, 24, 40, 0.12);
+  --shadow-pop: 0 24px 60px -18px rgba(16, 24, 40, 0.28), 0 0 0 1px var(--line-2);
+  --panel-grad: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  --skeleton-a: #edf1f6;
+  --skeleton-b: #e2e8f0;
+  --grid-line: rgba(30, 50, 80, 0.05);
+  --chart-grid: #edf1f5;
+  --chart-text: #6a7789;
+}

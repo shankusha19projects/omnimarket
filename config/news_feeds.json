@@ -1,0 +1,21 @@
+{
+  "_doc": "RSS/Atom feeds used by the News Intelligence Engine. Only headline, publisher, timestamp, link and a short excerpt are stored — full articles are never reproduced. Disable a feed by setting enabled=false.",
+  "feeds": [
+    {"id": "cnbc_top", "publisher": "CNBC", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=100003114", "category": "Markets", "enabled": true},
+    {"id": "cnbc_finance", "publisher": "CNBC", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000664", "category": "Markets", "enabled": true},
+    {"id": "cnbc_economy", "publisher": "CNBC", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=20910258", "category": "Economy", "enabled": true},
+    {"id": "cnbc_tech", "publisher": "CNBC", "url": "https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=19854910", "category": "Technology", "enabled": true},
+    {"id": "mw_top", "publisher": "MarketWatch", "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories", "category": "Markets", "enabled": true},
+    {"id": "mw_pulse", "publisher": "MarketWatch", "url": "https://feeds.content.dowjones.io/public/rss/mw_marketpulse", "category": "Markets", "enabled": true},
+    {"id": "yahoo", "publisher": "Yahoo Finance", "url": "https://finance.yahoo.com/news/rssindex", "category": "Markets", "enabled": true},
+    {"id": "fed", "publisher": "Federal Reserve", "url": "https://www.federalreserve.gov/feeds/press_all.xml", "category": "Federal Reserve", "enabled": true},
+    {"id": "ecb", "publisher": "European Central Bank", "url": "https://www.ecb.europa.eu/rss/press.html", "category": "Global Markets", "enabled": true},
+    {"id": "sec", "publisher": "SEC", "url": "https://www.sec.gov/news/pressreleases.rss", "category": "Regulation", "enabled": true},
+    {"id": "coindesk", "publisher": "CoinDesk", "url": "https://www.coindesk.com/arc/outboundfeeds/rss/", "category": "Crypto", "enabled": true},
+    {"id": "cointelegraph", "publisher": "Cointelegraph", "url": "https://cointelegraph.com/rss", "category": "Crypto", "enabled": true},
+    {"id": "oilprice", "publisher": "OilPrice.com", "url": "https://oilprice.com/rss/main", "category": "Energy", "enabled": true},
+    {"id": "mining", "publisher": "MINING.COM", "url": "https://www.mining.com/feed/", "category": "Commodities", "enabled": true},
+    {"id": "seekingalpha", "publisher": "Seeking Alpha", "url": "https://seekingalpha.com/market_currents.xml", "category": "Stocks", "enabled": true}
+  ],
+  "categories": ["Markets", "Stocks", "Economy", "Federal Reserve", "Crypto", "Commodities", "Technology", "Energy", "Real Estate", "Bonds", "Forex", "M&A", "Earnings", "IPOs", "Regulation", "Geopolitics", "Global Markets"]
+}

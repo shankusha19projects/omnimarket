@@ -1,0 +1,37 @@
+{
+  "app_name": "OmniMarket Intelligence Terminal",
+  "short_name": "OMNI",
+  "tagline": "Global markets intelligence, provenance-first",
+  "default_currency": "USD",
+  "default_timezone": "America/New_York",
+  "cache_ttl_seconds": {
+    "quote": 45,
+    "quotes_bulk": 60,
+    "history_intraday": 300,
+    "history_daily": 900,
+    "history_closed": 21600,
+    "fundamentals": 43200,
+    "profile": 86400,
+    "economic": 21600,
+    "news": 600,
+    "filings": 2700,
+    "crypto": 90,
+    "calendar": 3600,
+    "research": 3600,
+    "search": 3600
+  },
+  "rate_limits_per_minute": {
+    "query1.finance.yahoo.com": 240,
+    "query2.finance.yahoo.com": 60,
+    "api.coingecko.com": 20,
+    "data.sec.gov": 300,
+    "www.sec.gov": 300,
+    "api.nasdaq.com": 20,
+    "api.bls.gov": 5,
+    "api.stlouisfed.org": 100,
+    "api.search.tinyfish.ai": 25,
+    "api.fetch.tinyfish.ai": 20,
+    "agent.tinyfish.ai": 4,
+    "default": 60
+  }
+}

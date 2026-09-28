@@ -1,0 +1,29 @@
+{
+  "_doc": "Central bank reference config. Meeting dates cross-checked on 2026-09-27 against official calendars and centralbank.watch / Morningstar / MNI via the TinyFish web agent. Policy RATES are never stored here: they are fetched live (NY Fed, ECB Data Portal, Bank of Canada Valet, FRED when a key is configured) or shown as unavailable.",
+  "banks": [
+    {"id": "fed", "name": "Federal Reserve", "short": "Fed", "country": "US", "currency": "USD", "rate_name": "Fed Funds (effective)",
+     "live_source": "nyfed_effr", "fred_series": "DFEDTARU", "meetings": ["2026-10-28", "2026-12-09"],
+     "calendar_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm", "statements_url": "https://www.federalreserve.gov/monetarypolicy.htm"},
+    {"id": "ecb", "name": "European Central Bank", "short": "ECB", "country": "EU", "currency": "EUR", "rate_name": "Deposit Facility Rate",
+     "live_source": "ecb_dfr", "fred_series": "ECBDFR", "meetings": ["2026-10-29", "2026-12-17", "2027-02-04"],
+     "calendar_url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html", "statements_url": "https://www.ecb.europa.eu/press/pr/html/index.en.html"},
+    {"id": "boe", "name": "Bank of England", "short": "BoE", "country": "GB", "currency": "GBP", "rate_name": "Bank Rate",
+     "live_source": "boe_bank_rate", "fred_series": null, "meetings": ["2026-11-05", "2026-12-17"],
+     "calendar_url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates", "statements_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/monetary-policy-summary-and-minutes"},
+    {"id": "boj", "name": "Bank of Japan", "short": "BoJ", "country": "JP", "currency": "JPY", "rate_name": "Policy Rate",
+     "live_source": null, "fred_series": "IRSTCB01JPM156N", "meetings": ["2026-10-30", "2026-12-18"],
+     "calendar_url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm", "statements_url": "https://www.boj.or.jp/en/mopo/mpmdeci/index.htm"},
+    {"id": "rbi", "name": "Reserve Bank of India", "short": "RBI", "country": "IN", "currency": "INR", "rate_name": "Repo Rate",
+     "live_source": null, "fred_series": "IRSTCI01INM156N", "meetings": ["2026-10-07", "2026-12-04", "2027-02-05"],
+     "calendar_url": "https://www.rbi.org.in/", "statements_url": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx"},
+    {"id": "boc", "name": "Bank of Canada", "short": "BoC", "country": "CA", "currency": "CAD", "rate_name": "Overnight Rate Target",
+     "live_source": "boc_valet", "fred_series": null, "meetings": ["2026-10-28", "2026-12-09"],
+     "calendar_url": "https://www.bankofcanada.ca/core-functions/monetary-policy/key-interest-rate/", "statements_url": "https://www.bankofcanada.ca/press/press-releases/"},
+    {"id": "rba", "name": "Reserve Bank of Australia", "short": "RBA", "country": "AU", "currency": "AUD", "rate_name": "Cash Rate Target",
+     "live_source": null, "fred_series": "IRSTCB01AUM156N", "meetings": ["2026-11-03", "2026-12-08"],
+     "calendar_url": "https://www.rba.gov.au/schedules-events/board-meeting-schedules.html", "statements_url": "https://www.rba.gov.au/media-releases/"},
+    {"id": "pboc", "name": "People's Bank of China", "short": "PBOC", "country": "CN", "currency": "CNY", "rate_name": "1Y Loan Prime Rate",
+     "live_source": null, "fred_series": null, "meetings": [], "meeting_note": "LPR fixed on the 20th of each month (next business day if holiday).",
+     "calendar_url": "http://www.pbc.gov.cn/en/3688006/index.html", "statements_url": "http://www.pbc.gov.cn/en/3688110/index.html"}
+  ]
+}

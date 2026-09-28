@@ -1,0 +1,26 @@
+{
+  "_doc": "Thematic baskets. Equal-weighted by default. Add or edit baskets freely; symbols are Yahoo-compatible tickers.",
+  "themes": [
+    {"id": "ai", "name": "Artificial Intelligence", "etf": "BOTZ", "symbols": ["NVDA", "MSFT", "GOOGL", "META", "AMD", "PLTR", "AVGO", "ORCL"]},
+    {"id": "semis", "name": "Semiconductors", "etf": "SMH", "symbols": ["NVDA", "TSM", "AVGO", "AMD", "ASML", "MU", "QCOM", "AMAT", "LRCX", "KLAC"]},
+    {"id": "cloud", "name": "Cloud Computing", "etf": "SKYY", "symbols": ["AMZN", "MSFT", "GOOGL", "ORCL", "CRM", "NOW", "SNOW", "DDOG"]},
+    {"id": "cyber", "name": "Cybersecurity", "etf": "CIBR", "symbols": ["PANW", "CRWD", "FTNT", "ZS", "NET", "OKTA", "S"]},
+    {"id": "robotics", "name": "Robotics & Automation", "etf": "BOTZ", "symbols": ["ISRG", "ROK", "ABBNY", "TER", "SYM", "CGNX"]},
+    {"id": "quantum", "name": "Quantum Computing", "etf": "QTUM", "symbols": ["IONQ", "RGTI", "QBTS", "IBM", "GOOGL", "HON"]},
+    {"id": "defense", "name": "Defense", "etf": "ITA", "symbols": ["LMT", "RTX", "NOC", "GD", "LHX", "HII", "PLTR"]},
+    {"id": "aerospace", "name": "Aerospace", "etf": "ITA", "symbols": ["GE", "BA", "RTX", "TDG", "HWM", "HEI"]},
+    {"id": "nuclear", "name": "Nuclear Power", "etf": "NLR", "symbols": ["CEG", "VST", "CCJ", "BWXT", "SMR", "OKLO", "LEU"]},
+    {"id": "uranium", "name": "Uranium", "etf": "URA", "symbols": ["CCJ", "UEC", "NXE", "DNN", "UUUU", "LEU"]},
+    {"id": "clean", "name": "Clean Energy", "etf": "ICLN", "symbols": ["NEE", "ENPH", "FSLR", "BEP", "ORA", "AES"]},
+    {"id": "solar", "name": "Solar", "etf": "TAN", "symbols": ["FSLR", "ENPH", "SEDG", "RUN", "NXT", "ARRY"]},
+    {"id": "hydrogen", "name": "Hydrogen", "etf": "HDRO", "symbols": ["PLUG", "BE", "APD", "LIN", "BLDP"]},
+    {"id": "ev", "name": "Electric Vehicles", "etf": "DRIV", "symbols": ["TSLA", "RIVN", "LCID", "LI", "NIO", "XPEV", "BYDDY"]},
+    {"id": "batteries", "name": "Batteries", "etf": "LIT", "symbols": ["ALB", "SQM", "PCRFY", "ENVX", "QS", "ABAT"]},
+    {"id": "rare_earths", "name": "Rare Earths", "etf": "REMX", "symbols": ["MP", "USAR", "LYSDY", "UUUU", "ILKAF"]},
+    {"id": "biotech", "name": "Biotech", "etf": "XBI", "symbols": ["VRTX", "REGN", "AMGN", "GILD", "BIIB", "MRNA", "ALNY"]},
+    {"id": "space", "name": "Space", "etf": "UFO", "symbols": ["RKLB", "ASTS", "LUNR", "PL", "IRDM", "SATS"]},
+    {"id": "datacenters", "name": "Data Centers", "etf": "SRVR", "symbols": ["EQIX", "DLR", "VRT", "ANET", "SMCI", "ETN", "IRM"]},
+    {"id": "infrastructure", "name": "Infrastructure", "etf": "PAVE", "symbols": ["PWR", "VMC", "MLM", "URI", "ETN", "EME", "FIX"]},
+    {"id": "fintech", "name": "FinTech", "etf": "FINX", "symbols": ["PYPL", "XYZ", "COIN", "HOOD", "SOFI", "AFRM", "NU"]}
+  ]
+}
